@@ -1,12 +1,25 @@
 import { Col } from "antd";
 import { Row } from "antd/es/grid";
-import AntdSearchInput from "components/antd/AntdSearchInput";
+import { GrommetSearch } from "components/grommet/GrommetSearch";
 
 function App() {
+  const defaultOptions = [
+    'Apple',
+    'Orange',
+    'Banana',
+    'Grape',
+    'Melon',
+    'Strawberry',
+    'Kiwi',
+    'Mango',
+    'Raspberry',
+    'Rhubarb',
+  ];
+
   return (
     <Row style={{ marginTop: '40px' }}>
       <Col span={8} offset={8}>
-        <AntdSearchInput />
+        <GrommetSearch options={defaultOptions} />
       </Col>
     </Row>
   );
